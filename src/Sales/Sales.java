@@ -21,7 +21,7 @@ public class Sales
         Scanner scan = new Scanner(System.in);
 
         //TODO 4) Prompt the user for the number of sales people that they need to enter
-        System.out.print("How many sales people need to enter?");
+        System.out.print("How many sales people do you need to enter?");
         int people = scan.nextInt();
         //TODO 4) and modify the program to create an appropriately sized array.
         int [] sales = new int[people];
@@ -43,7 +43,7 @@ public class Sales
         sum = 0;
         for (int i=0; i < sales.length; i++)
         {
-            System.out.println("\t " + i + "\t\t\t" + sales[i]);
+            System.out.println("\t " + (i+1) + "\t\t\t" + sales[i]);
             sum += sales[i];
         }
 
@@ -51,16 +51,16 @@ public class Sales
 
 
         //TODO 1b) Use your average method to print the average sales
-        System.out.print("The average sales is " + average(sales));
+        System.out.println("The average sales is " + average(sales));
 
         //TODO 2b) Use your indexOfMax method to print the index of the best sales person
         //TODO 2b) and the sales amount for that sales person.
-        System.out.println("The person with the highest sales is Salesperson #" + indexOfMax(sales));
-        System.out.println("They sold" + sales[indexOfMax(sales)] + "units.");
+        System.out.println("The person with the highest sales is Salesperson #" + (indexOfMax(sales)+1));
+        System.out.println("They sold " + sales[indexOfMax(sales)] + " units.");
 
         //TODO 3b) Do the same for the worst sales person
-        System.out.println("The person with the worst sales is Salesperson #" + indexofMin(sales));
-        System.out.println("They sold" + sales[indexofMin(sales)] + "units.");
+        System.out.println("The person with the worst sales is Salesperson #" + (indexofMin(sales)+1));
+        System.out.println("They sold " + sales[indexofMin(sales)] + " units.");
     }
 
     public static double average(int[] arr) throws IllegalStateException
@@ -106,7 +106,7 @@ public class Sales
     //TODO 3a) Do the same for an indexOfMin method
     public static int indexofMin(int[] arr)
     {
-        int min = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
         int minLocation = -1;
         for (int i = 0; i < arr.length; i++)
         {
