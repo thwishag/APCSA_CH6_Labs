@@ -1,9 +1,9 @@
 package CardGame;
 
 /**
- * Name:
- * Date:
- * Period:
+ * Name: Thwisha Guru
+ * Date: 10/25/18
+ * Period: 1
  *
  * CardGame.DeckOfCardsTest.java
  *

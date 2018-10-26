@@ -1,9 +1,9 @@
 package CardGame;
 
 /**
- * Name:
- * Date:
- * Period:
+ * Name: Thwisha Guru
+ * Date: 10/25/18
+ * Period: 1
  *
  * CardGame.Card.java
  *
@@ -14,11 +14,13 @@ public class Card
 {
     private String face;
     private String suit;
+    private int value;
 
-    public Card (String cardFace, String cardSuit)
+    public Card (String cardFace, String cardSuit, int cardValue)
     {
         face = cardFace;
         suit = cardSuit;
+        value = cardValue;
     }
 
     public String toString()
@@ -32,5 +34,9 @@ public class Card
     
     public String getSuit() {
         return suit;
+    }
+
+    public int getvalue() {
+        return value;
     }
 }
