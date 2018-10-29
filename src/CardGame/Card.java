@@ -1,17 +1,9 @@
 package CardGame;
 
-/**
- * Name: Thwisha Guru
- * Date: 10/25/18
- * Period: 1
- *
- * CardGame.Card.java
- *
- * Represents a Card with a face and a suit.
- */
-
 public class Card
+
 {
+
     private String face;
     private String suit;
     private int value;
@@ -25,18 +17,20 @@ public class Card
 
     public String toString()
     {
-        return face + " of " + suit;    
+        return face + " of " + suit;
     }
 
-    public String getFace() {
+    public String getFace()
+    {
         return face;
     }
-    
-    public String getSuit() {
+    public String getSuit()
+    {
         return suit;
     }
 
-    public int getvalue() {
+    public int getvalue()
+    {
         return value;
     }
 }
