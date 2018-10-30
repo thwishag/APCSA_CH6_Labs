@@ -1,36 +1,23 @@
 package CardGame;
 
 public class Card
-
 {
+    private Suit suit;
+    private Value value;
 
-    private String face;
-    private String suit;
-    private int value;
-
-    public Card (String cardFace, String cardSuit, int cardValue)
-    {
-        face = cardFace;
-        suit = cardSuit;
-        value = cardValue;
+    public Card( Suit suit, Value value){
+        this.value = value;
+        this.suit = suit;
     }
 
     public String toString()
     {
-        return face + " of " + suit;
+        return this.suit.toString() + " of " + this.value.toString();
     }
 
-    public String getFace()
-    {
-        return face;
-    }
-    public String getSuit()
-    {
-        return suit;
-    }
 
-    public int getvalue()
+    public Value getValue()
     {
-        return value;
+        return this.value;
     }
 }
